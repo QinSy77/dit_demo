@@ -18,7 +18,7 @@ from torch.utils.data import RandomSampler
 
 
 import sys
-sys.path.append("~/PixArt-alpha")
+sys.path.append("~/dit_demo/PixArt-alpha")
 
 from diffusion import IDDPM
 from diffusion.data.builder import build_dataset, build_dataloader, set_data_root
