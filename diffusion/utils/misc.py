@@ -18,10 +18,11 @@ os.environ["MOX_SILENT_MODE"] = "1"  # mute moxing log
 
 
 def read_config(file):
-    # solve config loading conflict when multi-processes
+    #solve config loading conflict when multi-processes
     import time
     while True:
         config = Config.fromfile(file)
+        
         if len(config) == 0:
             time.sleep(0.1)
             continue
