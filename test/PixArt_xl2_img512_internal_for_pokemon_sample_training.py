@@ -1,4 +1,4 @@
-_base_ = ['~/code/dit_demo/PixArt-alpha/configs/PixArt_xl2_internal.py']  #有点像父类的意思
+_base_ = ['~/dit_demo/PixArt-alpha/configs/PixArt_xl2_internal.py']  #有点像父类的意思
 data_root = '/mnt/workspace/qinshiyang/PixArt-alpha/test/200data'
 ##root路径放配置信息
 image_list_json = ['200data_info.json',]
