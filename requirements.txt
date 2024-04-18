@@ -1,13 +1,10 @@
-torch==2.1.1
-torchaudio==2.1.1
-torchvision==0.16.1
-mmcv==1.7.0
-git+https://github.com/huggingface/diffusers
+diffusers
+mmcv==1.7.0 -f https://download.openmmlab.com/mmcv/dist/cu117/torch2.0/index.html
 timm==0.6.12
 accelerate
 tensorboard
 tensorboardX
-transformers
+transformers==4.25.1
 sentencepiece~=0.1.99
 ftfy
 beautifulsoup4
@@ -17,6 +14,6 @@ yapf==0.40.1
 opencv-python
 bs4
 einops
-xformers
+xformers==0.0.20
 optimum
 peft==0.6.2
