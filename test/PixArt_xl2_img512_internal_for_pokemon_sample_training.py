@@ -1,5 +1,5 @@
 _base_ = ['/root/dit_demo/configs/PixArt_xl2_internal.py']  #有点像父类的意思
-data_root = '/mnt/workspace/qinshiyang/PixArt-alpha/test/200data'
+data_root = '/mnt/data/qinshiyang/PixArt-alpha/test/200data'
 ##root路径放配置信息
 image_list_json = ['200data_info.json',]
 
@@ -19,7 +19,7 @@ use_rel_pos=False
 model = 'PixArt_XL_2'
 fp32_attention = True
 #load_from = None #表示预训练
-load_from = "/mnt/workspace/qinshiyang/.cache/huggingface/hub/models--PixArt-alpha--PixArt-alpha/snapshots/e5009837bc701bd72b97333e3b9417b516fd673f/PixArt-XL-2-512x512.pth"
+load_from = "/mnt/data/qinshiyang/.cache/huggingface/hub/models--PixArt-alpha--PixArt-alpha/snapshots/e5009837bc701bd72b97333e3b9417b516fd673f/PixArt-XL-2-512x512.pth"
 vae_pretrained = "stabilityai--sd-vae-ft-ema"
 lewei_scale = 1.0
 
