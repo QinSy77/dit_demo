@@ -254,7 +254,7 @@ if __name__ == '__main__':
     learn_sigma = getattr(config, 'learn_sigma', True) and pred_sigma
     model_kwargs={"window_block_indexes": config.window_block_indexes, "window_size": config.window_size,
                   "use_rel_pos": config.use_rel_pos, "lewei_scale": config.lewei_scale, 'config':config,
-                  'model_max_length': config.model_max_length}
+                  'model_max_length': config.model_max_length,"caption_channels":config.caption_channels}
 
     # build models
     train_diffusion = IDDPM(str(config.train_sampling_steps), learn_sigma=learn_sigma, pred_sigma=pred_sigma, snr=config.snr_loss)

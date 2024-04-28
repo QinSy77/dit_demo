@@ -16,6 +16,7 @@ num_workers=4
 train_sampling_steps = 1000
 eval_sampling_steps = 250
 model_max_length = 120
+caption_channels = 4096
 lora_rank = 4
 
 num_epochs = 80

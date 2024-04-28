@@ -266,7 +266,7 @@ class TimestepEmbedder(nn.Module):
         return embedding
 
     def forward(self, t):
-        t_freq = self.timestep_embedding(t, self.frequency_embedding_size).to(self.dtype)
+        t_freq = self.timestep_embedding(t, self.frequency_embedding_size).to(torch.float32) #原来是self.dtype 但是在使用FSDP时获取不到，猜测是两个GPU之间的通信问题，所以之间写死了
         return self.mlp(t_freq)
 
     @property
